@@ -40,7 +40,8 @@ for (i, sa) in enumerate(sa_embeds):
     sa_embeds[i] = sa.detach().numpy()
 sa_embeds = numpy.asarray(sa_embeds)
 
-numpy.savetxt('embeddings.csv', sa_embeds, delimiter=',')
+# numpy.savetxt('embeddings.csv', sa_embeds, delimiter=',')
+numpy.save('embeddings.npy', sa_embeds)
 
 
 print('Finished')
