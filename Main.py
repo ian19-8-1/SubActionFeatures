@@ -39,11 +39,6 @@ for sa in hidden_states[-2]:
 
 
 print('Saving embeddings...')
-# for (i, sa) in enumerate(sa_embeds):
-#     sa_embeds[i] = sa.detach().numpy()
-# sa_embeds = numpy.asarray(sa_embeds)
-#
-# numpy.save('embeddings.npy', sa_embeds)
 dict = {}
 for i in range(len(sa_embeds)):
     dict[i+1] = sa_embeds[i]
