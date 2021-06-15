@@ -1,48 +1,48 @@
-SIL
-add saltnpepper
-add teabag
-butter pan
-crack egg
-cut bun
-cut fruit
-cut orange
-fry egg
-fry pancake
-peel fruit
+silent
+add salt and pepper
+add a teabag
+butter the pan
+crack an egg
+cut a bun
+cut a fruit
+cut an orange
+fry an egg
+fry a pancake
+peel a fruit
 pour cereals
 pour coffee
-pour dough2pan
-pour egg2pan
+pour dough on a pan
+pour an egg on a pan
 pour flour
 pour juice
 pour milk
 pour oil
 pour sugar
 pour water
-put bunTogether
-put egg2plate
-put fruit2bowl
-put pancake2plate
-put toppingOnTop
+put buns together
+put an egg on a plate
+put fruit in a bowl
+put a pancake on a plate
+put toppings on top
 smear butter
 spoon flour
 spoon powder
 spoon sugar
-squeeze orange
+squeeze an orange
 stir cereals
 stir coffee
 stir dough
-stir egg
+stir an egg
 stir fruit
 stir milk
 stir tea
-stirfry egg
-take bowl
-take butter
-take cup
+stirfry an egg
+take a bowl
+take some butter
+take a cup
 take eggs
-take glass
-take knife
-take plate
-take squeezer
-take topping
+take a glass
+take a knife
+take a plate
+take a squeezer
+take toppings

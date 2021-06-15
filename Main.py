@@ -1,6 +1,6 @@
 import torch
 from transformers import BertTokenizer, BertModel
-import numpy
+import pickle
 
 import Utils
 
@@ -13,6 +13,9 @@ sub_actions = Utils.get_data(txt_file_path)
 print('Loading BERT tokenizer...')
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
+# for sa in sub_actions:
+#     print(tokenizer.tokenize(sa))
+# exit()
 
 print('Formatting inputs...')
 # Utils.get_max_len(sub_actions, tokenizer)
@@ -36,12 +39,16 @@ for sa in hidden_states[-2]:
 
 
 print('Saving embeddings...')
-for (i, sa) in enumerate(sa_embeds):
-    sa_embeds[i] = sa.detach().numpy()
-sa_embeds = numpy.asarray(sa_embeds)
-
-# numpy.savetxt('embeddings.csv', sa_embeds, delimiter=',')
-numpy.save('embeddings.npy', sa_embeds)
+# for (i, sa) in enumerate(sa_embeds):
+#     sa_embeds[i] = sa.detach().numpy()
+# sa_embeds = numpy.asarray(sa_embeds)
+#
+# numpy.save('embeddings.npy', sa_embeds)
+dict = {}
+for i in range(len(sa_embeds)):
+    dict[i+1] = sa_embeds[i]
+with open('embeddings.pkl', 'wb') as f:
+    pickle.dump(dict, f)
 
 
 print('Finished')
